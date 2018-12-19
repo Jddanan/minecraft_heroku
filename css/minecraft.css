@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("../images/minecraft_background.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+}
+
+.loading{
+    background-image:url("https://cdn.dribbble.com/users/4221/screenshots/2847133/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-backdrop{
+    background-image: url("../images/minecraft_background.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed; 
+    background-position: center;
+    opacity: 1!important; /* Can't do other way because of Bootstrap */
+}
+
+.modal-content{
+    background-color: rgba(0,0,0, 0 );
+    border : 0;
+}
+
+#textIntro, #textInstruction {
+    font-size: 1.5vw;
+}
+
+.modal-instruction{
+    display:none;
+    margin-left:50%;
+}
+
+.world{
+    margin : auto;
+}
+
+.button{
+    align-self: center;
+    width : 27vw;
+    margin :5px;
+    font-size: 2vw;
+    border-radius:10px;
+    border : 1px solid white;
+    padding : 0 15px;
+    background-color : rgba(98,252,33);
+    cursor: pointer;
+    position : relative;
+    margin-left: 50%;
+    transform:translateX(-50%);
+}
+
+.text{
+    align-self: center;
+    font-size: 10px;
+}
+
+.button:hover {
+    text-shadow: 0 0 2px 0 rgb(120,120,120);
+}
+
+.button-container{
+    margin : auto;
+}
+
+#menu .tools, #menu2 .blocks {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:80px;
+    width: 80px;
+    cursor: pointer;
+    margin-top : 2px;
+    background-color: rgba(98,252,33,0.5);
+}
+.tools , .blocks {
+    border:1px solid black;
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.warning {
+    color: red;
+    font-size: 2vw;
+    transition: 0.1s all;
+}
+
+.selected {
+    border: 3px solid firebrick;
+}
+
+.pixel {
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.2s all ease-in-out;
+}
+
+.hovered {
+    transition: 0.2s all ease-in-out;
+    filter: brightness(1.5);
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;    
+}
+
+#shovel{
+    background : url("../images/shovel.png");
+}
+
+#axe{
+    background : url("../images/axe.png");
+}
+
+#pickaxe{
+    background : url("../images/pickaxe.png");
+}
+
+#shear{
+    background : url("../images/shear.png");
+}
+
+#mower{
+    background : url("../images/mower.png");
+}
+
+.sky {
+    background-color: skyblue;
+}
+
+.cloud {
+    background-color: whitesmoke;
+}
+
+.water {
+    background-color: rgb(56, 75, 181);
+}
+
+.tree, #tree {
+    background-image: url(../images/log_oak.png);
+}
+
+.leaf, #leaf {
+    background-image: url(../images/leaves.png);
+}
+
+.grass, #grass {
+    background-image: url(../images/grass_side.png);
+}
+
+.dirt, #dirt {
+    background-image: url(../images/dirt.png);
+}
+.stone,#stone {
+    background-image: url(../images/stone.png)
+}
+.hide{
+    display:none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .pixel {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .pixel {
+        height: 30px;
+        width: 30px;
+    }
+    #menu .tools, #menu2 .blocks{
+        height: 50px;
+        width: 50px;
+    }  
+}
+@media only screen and (max-width: 840px) {
+    .pixel {
+        height: 15px;
+        width: 15px;
+    }
+    #menu .tools, #menu2 .blocks{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .pixel {
+        height: 10px;
+        width: 10px;
+    }
+    #menu .tools, #menu2 .blocks{
+        height: 18px;
+        width: 18px;
+    }
+}

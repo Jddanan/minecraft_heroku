@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/minecraft.css">
+    <title>title</title>
+</head>
+
+<body>
+    <div class="modal" id="startModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <p class="text" id="textIntro">
+                    2D Minecraft<br /><br />
+                    This game is a project made by Jdd & JrM in one week for an assignment @ITC Coding Bootcamp.<br /><br />
+                    Legend holds that he who finds the great axe has the power to smash trees and to starts a great
+                    adventure.
+                </p>
+                <div class="button-container">
+
+                    <button type="button" class="button continue" id="continue" class="btn btn-primary">Play !!</button><br />
+                    <button type="button" class="button" id="instruction" class="btn btn-primary">Instructions</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal hide" id="instructionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <p class="text" id="textInstruction">
+                    Minecraft is a sandbox game, destroy the blocks with the differents tools that are propose to you
+                    and create whatever you want with them ! <br />
+                    Don't forget cloud and water can't be remove and you can only use the blocks that you already
+                    removed !!
+                </p>
+                <div class="button-container">
+                    <button type="button" class="button continue" id="closeInstruction" class="btn btn-primary">Play</button><br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid world">
+        <div class="row">
+            <div id="world" class="col-10 scrolling-wrapper">
+            </div>
+            <div id="menu" class="col-1"></div>
+            <div id="menu2" class="col-1"></div>
+        </div>
+    </div>
+
+
+    <!-- Audio element -->
+    <audio id="sound" src=""></audio>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/minecraft.js"></script>
+</body>
+
+</html>
